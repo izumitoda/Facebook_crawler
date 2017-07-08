@@ -47,9 +47,9 @@ def getposts(url):
 
 #连接数据库
 def startdatabase():
-    client=MongoClient('10.141.208.24',27017)
+    client=MongoClient('*',27017)
     db=client.Crawler
-    db.authenticate('24crawler','24crawler',mechanism='MONGODB-CR')
+    db.authenticate('***','***',mechanism='***')
     return db
 
 db=startdatabase()
